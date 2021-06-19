@@ -1,0 +1,13 @@
+{% extends "index.twig" %}
+{% block title %}CAR{% endblock %}
+{% block content %}
+    <h1>Cars</h1>
+
+    <div id="car">
+        {% for car in cars %}
+            <div class="car">
+                {car.title}}. "<em>{{car.engine volume}}"</em>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
